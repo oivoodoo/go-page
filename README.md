@@ -1,2 +1,2 @@
 # Installation
-go build -o bin/index index.go
+go build -o bin/app app.go

@@ -1,4 +1,4 @@
-package main
+package app
 
 import (
     "github.com/garyburd/twister/server"
@@ -19,7 +19,7 @@ func index(request *web.Request) {
 func main() {
   page = template.Must(template.New("index").Parse(body))
 
-  server.Run(":3001",
+  server.Run(":8080",
     web.NewRouter().
       Register("/", "GET", index))
 }
